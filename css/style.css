@@ -1,0 +1,153 @@
+/* --------------------------------------------------------
+Style Sheet for Docplanner
+
+version: 1.0
+last modified: 15.07.2019
+author: Malek Gorchene
+email: malek.gorchene@gmail.com
+----------------------------------------------------------*/
+
+
+/* -----------------------------------------------------------
+CONTENTS:
+
+=General
+=Header
+=Hero
+=About
+=Statistuque
+=Places
+=Footer
+------------------------------------------------------------*/
+
+
+/* Generale Style */
+.green{
+    color : #00b39b;
+}
+.blue{
+    color : #3d83df;
+}
+.gray{
+    color : #747474;
+}
+.white{
+    color: white;
+}
+.bg-blue{
+    background-color : #3d83df;
+    background-image: url(https://www.docplanner.com/img/screen-saas@2x.png);
+    background-position: 180% 100%;
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+}
+.bg-green{
+    background-color : #00b39b;
+    background-image: url(https://www.docplanner.com/img/screen-marketplace@2x.png);
+    background-position: 180% 100%;
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+}
+
+/* Header Style */
+header{
+    position: sticky;
+    top : 0;
+    background-color : white;
+    z-index: 1;
+}
+header nav .navbar-toggler-icon{
+    color: #747474;
+}
+header nav button[aria-expanded="true"] .navbar-toggler-icon{
+    color: #00b39b;
+}
+nav>img{
+    width : 200px;
+}
+header nav #burger-nav ul li>a{
+    color : #747474;
+}
+header nav #burger-nav ul li.active>a{
+    color : #00b39b;
+}
+header nav #burger-nav ul li>a:hover{
+    color : #00b39b;
+}
+
+/* Hero Section Style */
+#hero{
+    margin-bottom : 50px;
+}
+#hero h1,#hero img,#hero p{
+    margin : 30px 0;
+}
+
+/* About Section Style */
+#about .row .about>p{
+    color: hsla(0,0%,100%,.7);
+}
+#about .footer-about{
+    margin: 50px 0;
+}
+#about .footer-about .col-md-9 li{
+    margin-bottom : 20px;
+}
+#about .row .about{
+    border-radius: 10px;
+    padding : 20px;
+    height: 480px;
+}
+#about svg{
+    fill : #c4c4c4;
+    height: 20px;
+}
+#about svg:hover{
+    fill : #00b39b;
+}
+
+/* Statistique Section Style */
+#statistique{
+    padding : 20px;
+    background: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+}
+#statistique .col-lg-6.row .col-md-6:nth-child(1) .stat{
+   margin-top : 20px;
+}
+#statistique .col-lg-6.row .col-md-6:nth-child(2) .stat{
+    margin-bottom : 20px;
+ }
+.stat{
+    height: 250px;
+    padding: 20px;
+    border-radius : 5px;
+    background-color : white;
+}
+
+/* Places Section Style */
+#places{
+    padding : 70px 0;
+}
+#places .col-lg-4{
+    margin-bottom : 20px;
+}
+#places h2+p.gray.small{
+    margin-top : 30px;
+    margin-bottom: 60px;
+}
+#places .ville{
+    border-radius : 6px;
+    overflow: hidden;
+}
+#places .ville:hover{
+    box-shadow: 0 20px 50px 0 rgba(0,0,0,.13);
+}
+#places .ville img{
+    width : 100%;
+}
+#places .ville > div{
+    display: flex;
+    justify-content: space-around;
+    align-items : baseline;
+    padding : 10px;
+}
